@@ -1,53 +1,86 @@
-Istanbul Airbnb Reviews: Turkish vs. English Sentiment Analysis
-About the Project
+# Istanbul Airbnb Reviews: Turkish vs. English Sentiment Analysis
 
-This project aims to analyze and compare Turkish and English Airbnb reviews in Istanbul using Natural Language Processing (NLP) and sentiment analysis techniques.
+## About the Project
 
-The study focuses on identifying differences in customer sentiment, satisfaction, and guest experiences across the two languages.
+This project presents a comparative sentiment analysis of Turkish and English Airbnb reviews in Istanbul using Natural Language Processing (NLP) and Machine Learning techniques.
 
-Research Objectives
-Analyze Turkish and English Airbnb reviews.
-Classify reviews as positive, negative, or neutral.
-Compare sentiment distributions between languages.
-Identify common topics influencing guest satisfaction.
-Explore language-based differences in customer feedback.
-Methodology
+The study investigates language-based differences in guest satisfaction and accommodation experiences by analyzing customer reviews in two languages. It explores sentiment distributions, compares classification approaches, and examines how guests express positive and non-positive experiences.
 
-The project may involve the following techniques:
+## Research Objectives
 
-Natural Language Processing (NLP)
-Text Preprocessing
-Sentiment Analysis
-Machine Learning
-Data Visualization
-Comparative Text Analysis
-Tools & Technologies
-Python
-Pandas
-NumPy
-NLTK
-Scikit-learn
-Matplotlib
-Seaborn
-Transformers
-Research Scope
+- Analyze Turkish and English Airbnb guest reviews.
+- Classify reviews based on their sentiment.
+- Compare sentiment distributions across the two languages.
+- Identify differences in customer satisfaction and feedback.
+- Investigate the relationship between language and guest experience.
 
-Location: Istanbul, Türkiye
+## Dataset
 
-Languages: Turkish and English
+- **Location:** Istanbul, Türkiye
+- **Languages:** Turkish and English
+- **Data Source:** [Inside Airbnb](http://insideairbnb.com/)
+- **Data Type:** Airbnb listings and guest reviews
+- **Analysis Period:** January – September 2025
+- **Sample Size:** 6,000 reviews (3,000 Turkish and 3,000 English)
 
-Data Source: Airbnb guest reviews
+The dataset was cleaned, preprocessed, and balanced to support a comparative analysis between the two languages.
 
-Research Focus: Comparative multilingual sentiment analysis
+## Methodology
 
-Expected Outcomes
+The study follows a structured data analysis and machine learning workflow:
 
-The research aims to reveal similarities and differences in how Turkish- and English-speaking guests express their accommodation experiences and satisfaction levels.
+1. **Data Collection & Preparation:** Collecting Airbnb review data and merging relevant datasets.
+2. **Text Preprocessing:** Cleaning text data, removing unnecessary elements, and preparing reviews for analysis.
+3. **Sentiment Analysis:**
+   - VADER sentiment analysis for English reviews.
+   - TF-IDF-based machine learning models for Turkish reviews.
+4. **Machine Learning Model Comparison:** Evaluating Logistic Regression, Linear SVM, and Multinomial Naive Bayes models.
+5. **Statistical Analysis:** Comparing sentiment distributions and examining language-based differences.
+6. **Data Visualization:** Presenting findings through statistical charts and comparative visualizations.
 
-Project Status
+## Machine Learning Models
 
-🚧 Research and development in progress.
+The following models and approaches were explored:
 
-Keywords
+| Model | Application |
+|---|---|
+| VADER | English sentiment classification |
+| Logistic Regression | Turkish sentiment classification |
+| Linear SVM | Turkish model comparison |
+| Multinomial Naive Bayes | Turkish model comparison |
 
-Airbnb, Istanbul, Sentiment Analysis, Turkish NLP, English NLP, Machine Learning, Customer Reviews, Tourism Analytics.
+TF-IDF was used for text feature extraction, with unigram and bigram representations.
+
+## Key Findings
+
+- Turkish reviews showed a higher proportion of non-positive sentiment compared to English reviews.
+- English reviews were predominantly classified as positive.
+- Statistical tests indicated a significant difference in sentiment distributions between the two languages.
+- Logistic Regression achieved a **Macro F1-score of 0.831** on the Turkish test dataset.
+- The relationship between review language and sentiment remained statistically significant after controlling for selected listing characteristics, including price, room type, and neighborhood.
+
+## Tools & Technologies
+
+- **Programming:** Python
+- **Data Analysis:** Pandas, NumPy
+- **Natural Language Processing:** NLTK, langdetect
+- **Machine Learning:** Scikit-learn
+- **Text Representation:** TF-IDF
+- **Visualization:** Matplotlib, Seaborn
+- **Statistical Analysis:** Hypothesis Testing, Logistic Regression
+
+## Project Outcomes
+
+This research highlights how language can be associated with differences in customer feedback and reported accommodation experiences.
+
+By combining NLP, machine learning, and statistical analysis, the project provides a comparative perspective on multilingual customer reviews in the tourism and accommodation industry.
+
+## Project Status
+
+<badge>Completed</badge>
+
+**Academic Thesis Project – 2026**
+
+## Keywords
+
+Airbnb, Istanbul, Sentiment Analysis, Natural Language Processing, Turkish NLP, English NLP, Machine Learning, TF-IDF, Customer Reviews, Tourism Analytics, Comparative Analysis
